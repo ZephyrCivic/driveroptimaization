@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AIバス運行シフトジェネレーター</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      :root {
+        --bg-grid-line: rgba(100, 116, 139, 0.25); /* slate-600 with opacity */
+      }
+      /* For Webkit-based browsers (Chrome, Safari) */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: #2c3038;
+        border-radius: 10px;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: #495057;
+        border-radius: 10px;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
+
+      .bg-grid {
+        background-image: linear-gradient(to right, var(--bg-grid-line) 1px, transparent 1px);
+      }
+    </style>
+  </head>
+  <body class="bg-slate-900 text-slate-300">
+    <div id="root"></div>
+    <script type="module" src="./src/main.tsx"></script>
+  </body>
+</html>
